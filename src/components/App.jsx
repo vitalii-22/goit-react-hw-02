@@ -3,6 +3,7 @@ import './App.css';
 import Feedback from './Feedback/Feedback';
 import Options from './Options/Options';
 import Notification from './Notification/Notification';
+import Description from './Description/Description';
 
 function App() {
   const [reviews, setReviews] = useState(() => {
@@ -53,11 +54,7 @@ function App() {
 
   return (
     <>
-      <h1 className="title">Sip Happens Café</h1>
-      <p className="hintText">
-        Please leave your feedback about our service by selecting one of the
-        options below.
-      </p>
+      <Description />
 
       <Options
         onUpdate={updateFeedback}
